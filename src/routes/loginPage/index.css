@@ -1,0 +1,10 @@
+#components-form-demo-normal-login .loginform {
+    max-width: 300px;
+  }
+  #components-form-demo-normal-login .login-form-forgot {
+    float: right;
+  }
+  #components-form-demo-normal-login .loginBtn {
+    width: 100%;
+    background: red
+  }
