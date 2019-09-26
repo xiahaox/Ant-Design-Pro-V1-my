@@ -36,4 +36,7 @@ module.exports={
     'GET /api/logout': (req, res) => {
         res.send({ status: 'ok' });
       },
+    'GET /api/outTime': (req, res) => {
+    res.send({ code: '403' });
+    },
 }

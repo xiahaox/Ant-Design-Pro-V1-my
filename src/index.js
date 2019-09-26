@@ -18,3 +18,5 @@ app.router(require('./router').default);
 
 // 5. Start
 app.start('#root');
+// console.log(app._store); // 顶部的 state 数据
+export default app._store

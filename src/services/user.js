@@ -22,3 +22,7 @@ export function getUserInfo(params) {
 export function logout(params) {
   return request(`/api/logout`);
 }
+
+export function outTime(params) {
+  return request(`/api/outTime`);
+}

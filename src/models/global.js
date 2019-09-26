@@ -1,5 +1,5 @@
 
-import {login,getUserInfo,logout} from "../services/user"
+import {login,getUserInfo,logout,outTime} from "../services/user"
 import { createHashHistory } from 'history';
 import { routerRedux } from 'dva/router';
 export default {
@@ -56,7 +56,11 @@ export default {
             );
 
         } 
-      }
+      },
+      // 模仿请求超时接口
+      *outTime({payload},{call,put}){
+        const response=yield call(outTime)
+      },
     },
   
     reducers: {
